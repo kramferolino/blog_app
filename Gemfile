@@ -70,3 +70,6 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+# Devise is a flexible authentication solution for Rails based on Warden.
+gem 'devise'
