@@ -8,8 +8,11 @@
 </div>
 
 <div class="container">
-  <%= render 'comments/form', post: @post %>
+  <%= render 'comments/form', 
+  post: @post, 
+  comment: @post.comments.build, 
+  submit_label: "Reply"  %>
   <% @comment.each do |comment| %>
-    <%= render 'comments/comment', post: @post, comment: comment %>
+    <%= render 'comments/comment', post: @post, comment: comment%>
   <% end %>
 </div>
