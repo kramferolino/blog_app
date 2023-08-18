@@ -7,7 +7,8 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 
-User.create(email: 'kramferolino@gmail.com', password: 'password', password_confirmation: 'password')
+User.create(email: 'kramferolino@gmail.com', name: 'Mark', password: 'password', password_confirmation: 'password')
+User.create(email: 'john@doe.com', name: 'John doe', password: 'password', password_confirmation: 'password')
 
 10.times do |x|
     Post.create(title: "Title #{x}", body: "Body #{x} content example.", user_id: User.first.id)
