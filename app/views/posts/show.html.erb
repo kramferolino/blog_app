@@ -1,4 +1,3 @@
-<p style="color: green"><%= notice %></p>
 <div class="container">
   <%= render @post %>
   <div>
@@ -10,4 +9,7 @@
 
 <div class="container">
   <%= render 'comments/form', post: @post %>
+  <% @comment.each do |comment| %>
+    <%= render 'comments/comment', post: @post, comment: comment %>
+  <% end %>
 </div>
