@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
         @comment = @post.comments.create(comment_params)
         @comment.user = current_user 
 
-        if @comment.save 
+        if @comment.save
             flash[:notice] = "Comment has been created"
             redirect_to post_path(@post)
         else

@@ -73,3 +73,6 @@ end
 
 # Devise is a flexible authentication solution for Rails based on Warden.
 gem 'devise'
+
+# Noticed support these notification delivery methods out of the box.
+gem "noticed", "~> 1.6"
