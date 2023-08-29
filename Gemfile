@@ -76,3 +76,6 @@ gem 'devise'
 
 # Noticed support these notification delivery methods out of the box.
 gem "noticed", "~> 1.6"
+
+# Ransack will help you easily add searching to your Rails application, without any additional dependencies.
+gem "ransack", "~> 4.0"
