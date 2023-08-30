@@ -15,4 +15,13 @@ class User < ApplicationRecord
   def self.ransackable_associations(auth_object = nil)
     ["comments", "notifications", "posts"]
   end
+
+  enum role: [:user, :admin]
+  after_initialize :set_default_role, if: :new_record?
+    
+  private 
+
+  def set_default_role
+    self.role ||= :user    
+  end
 end
