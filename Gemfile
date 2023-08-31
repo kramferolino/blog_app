@@ -79,3 +79,6 @@ gem "noticed", "~> 1.6"
 
 # Ransack will help you easily add searching to your Rails application, without any additional dependencies.
 gem "ransack", "~> 4.0"
+
+# FriendlyId is the "Swiss Army bulldozer" of slugging and permalink plugins for Active Record. 
+gem "friendly_id", "~> 5.5"
