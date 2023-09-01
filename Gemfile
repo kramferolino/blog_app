@@ -51,6 +51,14 @@ gem "image_processing", "~> 1.2"
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+
+  # These are for debugger
+  # Provides the protocol to establish communication between the debugger engine
+  gem "ruby-debug-ide", "~> 0.7.3"
+
+  # Faster execution speed and 2.0.0 compatibility is achieved by utilizing a TracePoint mechanism in the Ruby C API.
+  gem 'debase', '~> 0.2.5.beta2', require: false
+  # End Debugger gems
 end
 
 group :development do
@@ -82,3 +90,12 @@ gem "ransack", "~> 4.0"
 
 # FriendlyId is the "Swiss Army bulldozer" of slugging and permalink plugins for Active Record. 
 gem "friendly_id", "~> 5.5"
+
+# Provides the protocol to establish communication between the debugger engine
+gem "ruby-debug-ide", "~> 0.7.3"
+
+# Faster execution speed and 2.0.0 compatibility is achieved by utilizing a TracePoint mechanism in the Ruby C API.
+gem 'debase', '~> 0.2.5.beta2', require: false
+
+# Designed to help you increase your application's performance by reducing the number of queries it makes.
+gem "bullet", "~> 7.0"
