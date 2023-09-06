@@ -99,3 +99,5 @@ gem 'debase', '~> 0.2.5.beta2', require: false
 
 # Designed to help you increase your application's performance by reducing the number of queries it makes.
 gem "bullet", "~> 7.0"
+
+gem "wicked", "~> 2.0"
