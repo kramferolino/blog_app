@@ -29,15 +29,19 @@ Address.first_or_create!(street: '123 Main St.',
                         zip: '1746',
                         country: 'Philippines',
                         user: john)
-# User.create(email: 'kramferolino@gmail.com', first_name: 'Mark', last_name: 'Ferolino', password: 'password', password_confirmation: 'password')
-# User.create(email: 'john@doe.com', first_name: 'John', last_name: 'Doe', password: 'password', password_confirmation: 'password')
+category = Category.first_or_create!(name:"Uncategorized", display_in_nav: true)
+Category.first_or_create!(name:"Cars", display_in_nav: false)
+Category.first_or_create!(name:"Bikes", display_in_nav: true)
+Category.first_or_create!(name:"Boats", display_in_nav: true)
+
 elapsed = Benchmark.measure do
     posts = []
     10.times do |x|
         puts "Creating post #{x}"
         post = Post.create(title: "Title #{x}",
                     body: "Body #{x} content example.", 
-                    user: kram)
+                    user: kram,
+                    category: category)
         5.times do |y|
             puts "Creating comment #{y} for post #{x}"
             post.comments.build(body: "Comment #{y}",
