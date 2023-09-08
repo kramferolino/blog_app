@@ -54,6 +54,8 @@ GEM
     activerecord (7.0.7)
       activemodel (= 7.0.7)
       activesupport (= 7.0.7)
+    activerecord-import (1.5.0)
+      activerecord (>= 4.2)
     activestorage (7.0.7)
       actionpack (= 7.0.7)
       activejob (= 7.0.7)
@@ -273,6 +275,7 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  activerecord-import (~> 1.5)
   bootsnap
   bullet (~> 7.0)
   capybara

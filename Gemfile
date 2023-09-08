@@ -100,4 +100,8 @@ gem 'debase', '~> 0.2.5.beta2', require: false
 # Designed to help you increase your application's performance by reducing the number of queries it makes.
 gem "bullet", "~> 7.0"
 
+# Makes your Rails controllers into step-by-step wizards.
 gem "wicked", "~> 2.0"
+
+# A library for bulk inserting data using ActiveRecord.
+gem "activerecord-import", "~> 1.5"

@@ -8,17 +8,18 @@
       <%= f.label :email %><br />
       <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
     </div>
-
+    <div class="field">
+      <%= f.label :avatar %><br />
+      <%= f.file_field :avatar %><br />
+    </div>
     <div class="field">
       <%= f.label :first_name %><br />
       <%= f.text_field :first_name %><br />
     </div>
-
     <div class="field">
       <%= f.label :last_name %><br />
       <%= f.text_field :last_name %><br />
     </div>
-
     <%= fields_for :address, resource.address do |c| %>
       <%= c.hidden_field :id %>
       <div class="container card">
