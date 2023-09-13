@@ -169,6 +169,8 @@ GEM
       http (>= 4.0.0)
       rails (>= 5.2.0)
     orm_adapter (0.5.0)
+    pay (6.8.1)
+      rails (>= 6.0.0)
     pg (1.4.3)
     public_suffix (5.0.3)
     puma (5.6.6)
@@ -236,6 +238,7 @@ GEM
       sprockets (>= 3.0.0)
     stimulus-rails (1.2.2)
       railties (>= 6.0.0)
+    stripe (9.2.0)
     thor (1.2.2)
     timeout (0.4.0)
     turbo-rails (1.4.0)
@@ -287,6 +290,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   noticed (~> 1.6)
+  pay (~> 6.8)
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.7)
@@ -296,6 +300,7 @@ DEPENDENCIES
   selenium-webdriver
   sprockets-rails
   stimulus-rails
+  stripe (~> 9.2)
   turbo-rails
   tzinfo-data
   web-console

@@ -57,7 +57,7 @@ group :development, :test do
   gem "ruby-debug-ide", "~> 0.7.3"
 
   # Faster execution speed and 2.0.0 compatibility is achieved by utilizing a TracePoint mechanism in the Ruby C API.
-  gem 'debase', '~> 0.2.5.beta2', require: false
+  # gem 'debase', '~> 0.2.5.beta2', require: false
   # End Debugger gems
 end
 
@@ -105,3 +105,6 @@ gem "wicked", "~> 2.0"
 
 # A library for bulk inserting data using ActiveRecord.
 gem "activerecord-import", "~> 1.5"
+
+gem "stripe", "~> 9.2"
+gem "pay", "~> 6.8"

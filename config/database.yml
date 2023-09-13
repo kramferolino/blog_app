@@ -87,5 +87,5 @@ production:
   <<: *default
   database: kram_blog_production
   username: postgres
-  password: password
-  # password: <%= Rails.application.credentials.dig(:prod_db_username) %>
+  #password: password
+  password: <%= Rails.application.credentials.dig(:prod_db_username) %>
