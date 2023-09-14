@@ -165,6 +165,8 @@ GEM
     nio4r (2.5.9)
     nokogiri (1.15.4-x64-mingw-ucrt)
       racc (~> 1.4)
+    nokogiri (1.15.4-x86_64-linux)
+      racc (~> 1.4)
     noticed (1.6.3)
       http (>= 4.0.0)
       rails (>= 5.2.0)
@@ -173,7 +175,7 @@ GEM
       rails (>= 6.0.0)
     pg (1.4.3)
     public_suffix (5.0.3)
-    puma (5.6.6)
+    puma (5.6.7)
       nio4r (~> 2.0)
     racc (1.7.1)
     rack (2.2.8)
@@ -276,6 +278,7 @@ GEM
 
 PLATFORMS
   x64-mingw-ucrt
+  x86_64-linux
 
 DEPENDENCIES
   activerecord-import (~> 1.5)
@@ -292,7 +295,7 @@ DEPENDENCIES
   noticed (~> 1.6)
   pay (~> 6.8)
   pg (~> 1.1)
-  puma (~> 5.0)
+  puma (~> 5.6)
   rails (~> 7.0.7)
   ransack (~> 4.0)
   redis (~> 4.0)
