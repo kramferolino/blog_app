@@ -52,17 +52,19 @@ group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 
-  # These are for debugger
-  # Provides the protocol to establish communication between the debugger engine
-  gem "ruby-debug-ide", "~> 0.7.3"
+  # # These are for debugger
+  # # Provides the protocol to establish communication between the debugger engine
+  # gem "ruby-debug-ide", "~> 0.7.3"
 
-  # Faster execution speed and 2.0.0 compatibility is achieved by utilizing a TracePoint mechanism in the Ruby C API.
+  # # Faster execution speed and 2.0.0 compatibility is achieved by utilizing a TracePoint mechanism in the Ruby C API.
   # gem 'debase', '~> 0.2.5.beta2', require: false
   # End Debugger gems
 end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem "web-console"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
