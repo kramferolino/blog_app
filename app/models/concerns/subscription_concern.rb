@@ -20,4 +20,4 @@ module SubscriptionConcern
         subscription_end_date.nil? ? false : subscription_end_date > 15.days.from_now
       end
     end
-  end
+end
