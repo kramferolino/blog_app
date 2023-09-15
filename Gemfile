@@ -97,7 +97,7 @@ gem "friendly_id", "~> 5.5"
 gem "ruby-debug-ide", "~> 0.7.3"
 
 # Faster execution speed and 2.0.0 compatibility is achieved by utilizing a TracePoint mechanism in the Ruby C API.
-gem 'debase', '~> 0.2.5.beta2', require: false
+gem 'debase', '~> 0.2.5.beta2', require: true
 
 # Designed to help you increase your application's performance by reducing the number of queries it makes.
 gem "bullet", "~> 7.0"
